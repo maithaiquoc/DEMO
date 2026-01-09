@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Đăng Nhập</title>
+    <link rel="stylesheet" href="css/login.min.css">
+    <!-- Thêm font-awesome (hoặc SVG inline nếu muốn) cho icon mạng xã hội -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+    <!-- Header mới với logo (dạng text) và navigation menu -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">OnlineEdu</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Trang chủ</a></li>
+                    <li><a href="/login">Đăng nhập</a></li>
+                    <li><a href="/register">Đăng ký</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Nội dung trang đăng nhập sẽ ở đây -->
+<main>
+    <!-- Tabs -->
+    <div class="tabs-container">
+        <button id="tab-login" type="button" class="tab-btn active">Đăng nhập</button>
+        <button id="tab-register" type="button" class="tab-btn">Đăng ký</button>
+    </div>
+    <!-- Tab Content -->
+    <div id="login-form-content">
+        <form id="custom-login-form" action="/login" method="post" autocomplete="off" novalidate>
+            <div class="form-group">
+                <label for="input-email" class="form-label">Email</label>
+                <input type="email" id="input-email" name="email" class="form-input" required>
+                <div id="error-email" class="form-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="input-password" class="form-label">Mật khẩu</label>
+                <input type="password" id="input-password" name="password" class="form-input" required
+                       minlength="6" maxlength="10"
+                       pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{6,10}$"
+                       title="Mật khẩu phải từ 6-10 ký tự, có ít nhất 1 chữ in hoa, 1 chữ thường, 1 số, 1 ký tự đặc biệt.">
+                <div id="error-password" class="form-error"></div>
+            </div>
+            <div class="form-group text-right">
+                <a href="/forgot" class="forgot-password-link">Quên mật khẩu?</a>
+            </div>
+            <button type="submit" class="form-submit-btn">Đăng nhập</button>
+        </form>
+    </div>
+    <div id="register-form-content" style="display:none;">
+        <form id="custom-register-form" action="/register" method="post" autocomplete="off" novalidate>
+            <div class="form-group">
+                <label for="reg-name" class="form-label">Họ và tên</label>
+                <input type="text" id="reg-name" name="name" class="form-input" required>
+                <div id="error-reg-name" class="form-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="reg-email" class="form-label">Email</label>
+                <input type="email" id="reg-email" name="email" class="form-input" required>
+                <div id="error-reg-email" class="form-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="reg-password" class="form-label">Mật khẩu</label>
+                <input type="password" id="reg-password" name="password" class="form-input"
+                       required minlength="6" maxlength="10"
+                       pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{6,10}$"
+                       title="Mật khẩu phải từ 6-10 ký tự, có ít nhất 1 chữ in hoa, 1 chữ thường, 1 số, 1 ký tự đặc biệt.">
+                <div id="error-reg-password" class="form-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="reg-repass" class="form-label">Nhập lại mật khẩu</label>
+                <input type="password" id="reg-repass" name="repassword" class="form-input"
+                       required minlength="6" maxlength="10">
+                <div id="error-reg-repass" class="form-error"></div>
+            </div>
+            <button type="submit" class="form-submit-btn">Đăng nhập</button>
+        </form>
+    </div>
+</main>
+
+    <!-- Footer mới bắt đầu -->
+    <footer class="footer-main">
+      <div class="footer-container">
+        <!-- Logo & Giới thiệu ngắn -->
+        <div class="footer-about">
+          <div class="footer-logo">
+            <a href="/">OnlineEdu</a>
+          </div>
+          <div>
+            Nền tảng học online tiên tiến, kết nối tri thức toàn cầu. Chúng tôi cung cấp các khóa học chất lượng, hỗ trợ cá nhân hóa, phù hợp mọi nhu cầu học tập.
+          </div>
+        </div>
+        <!-- Sitemap -->
+        <div class="footer-sitemap">
+          <h4>Sitemap</h4>
+          <ul>
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/login">Đăng nhập</a></li>
+            <li><a href="/register">Đăng ký</a></li>
+            <li><a href="/about">Giới thiệu</a></li>
+            <li><a href="/courses">Khóa học</a></li>
+            <li><a href="/contact">Liên hệ</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h4>Đăng ký nhận thông tin</h4>
+          <form class="newsletter-form" action="#" method="post" autocomplete="off">
+            <input type="email" required placeholder="Nhập email của bạn" name="email">
+            <button type="submit">Đăng ký</button>
+          </form>
+          <!-- Socials -->
+          <div class="footer-social">
+            <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a class="youtube" href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Youtube"><i class="fab fa-youtube-square"></i></a>
+            <a class="instagram" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 OnlineEdu. Đã đăng ký bản quyền.
+      </div>
+    </footer>
+    <!-- Footer mới kết thúc -->
+    <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS cơ bản & Style giao diện bằng prompt</title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left" style="display:flex;align-items:center;gap:12px;">
+      <div class="nav-logo" style="display:flex;align-items:center;gap:10px;">
+        <img src="image/logo.png" width="54" height="54" style="border-radius:8px;object-fit:contain">
+        <span class="nav-text" style="font-size:1.3em;font-weight:700;color:var(--primary-color)">Po Café</span>
+      </div>
+    </div>
+    <div class="nav-center" style="flex:1;display:flex;justify-content:center;align-items:center;gap:32px;">
+      <div class="nav-links" style="display:flex;justify-content:center;align-items:center;gap:32px;">
+        <a href="#">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Menu</a>
+        <a href="#">Dịch vụ</a>
+        <a href="#">Liên hệ</a>
+      </div>
+    </div>
+    <div class="nav-right" style="display:flex;align-items:center;gap:16px;">
+      <button aria-label="Tìm kiếm" class="nav-search-btn" style="background:none;border:none;cursor:pointer;display:flex;align-items:center;"><svg width="24" height="24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button aria-label="Menu" class="nav-toggle-btn" style="background:var(--primary-color);border:none;border-radius:6px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </nav>
+
+  <!-- Hero section bắt đầu -->
+  <section class="hero-section">
+    <div class="hero-image">
+      <img src="image/panda1.png" alt="Không gian quán cà phê Po">
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">Chào mừng đến với Quán Cà Phê Po</h1>
+      <p class="hero-description">Thưởng thức không gian ấm cúng và hương vị cà phê đậm đà chuẩn gu Việt mỗi ngày tại Po.</p>
+    </div>
+  </section>
+  <!-- Hero section kết thúc -->
+
+  <div class="flex-container">
+    <div class="product-card">
+      <img src="https://placehold.co/300x180" alt="Ảnh sản phẩm">
+      <h2>Tên Sản Phẩm</h2>
+      <p>Đây là đoạn mô tả ngắn về sản phẩm, cung cấp thông tin tổng quan cho người xem.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://placehold.co/300x180" alt="Ảnh sản phẩm">
+      <h2>Tên Sản Phẩm</h2>
+      <p>Đây là đoạn mô tả ngắn về sản phẩm, cung cấp thông tin tổng quan cho người xem.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://placehold.co/300x180" alt="Ảnh sản phẩm">
+      <h2>Tên Sản Phẩm 3</h2>
+      <p>Sản phẩm thứ ba, cũng có mô tả ngắn gọn cung cấp thêm thông tin.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://placehold.co/300x180" alt="Ảnh sản phẩm">
+      <h2>Tên Sản Phẩm 4</h2>
+      <p>Mô tả ngắn cho sản phẩm thứ tư, nổi bật thông tin khác biệt.</p>
+    </div>
+  </div>
+
+  <!-- Section mới 2 cột bắt đầu -->
+  <section class="two-column-section">
+    <div class="col-image">
+      <img src="image/Poster.png" alt="Ảnh minh họa">
+    </div>
+    <div class="col-content">
+      <h2>Khám phá giải pháp dành cho bạn</h2>
+      <p>
+        Chúng tôi mang đến những giải pháp sáng tạo với công nghệ hiện đại, phù hợp mọi nhu cầu kinh doanh và phát triển cá nhân. Hãy liên hệ với chúng tôi để nhận tư vấn miễn phí và khám phá nhiều ưu đãi hấp dẫn!
+      </p>
+      <a href="#" class="cta-btn">Tìm hiểu thêm</a>
+    </div>
+  </section>
+  <!-- Section mới 2 cột kết thúc -->
+
+  <!-- Section dịch vụ bắt đầu -->
+  <section class="services-section">
+    <h2 class="services-title">Dịch vụ của chúng tôi</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <div class="service-icon-container">
+          <img src="https://placehold.co/40x40?text=Icon" alt="Icon 1">
+        </div>
+        <h3>Thiết kế UI/UX</h3>
+        <p>Chúng tôi cung cấp giải pháp thiết kế giao diện người dùng chuyên nghiệp giúp tăng trải nghiệm khách hàng.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon-container">
+          <img src="https://placehold.co/40x40?text=Icon" alt="Icon 2">
+        </div>
+        <h3>Phát triển web</h3>
+        <p>Xây dựng website hiện đại, tối ưu tốc độ và thân thiện với mọi thiết bị, giúp doanh nghiệp nổi bật trên môi trường số.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon-container">
+          <img src="https://placehold.co/40x40?text=Icon" alt="Icon 3">
+        </div>
+        <h3>Tư vấn công nghệ</h3>
+        <p>Tư vấn, định hướng và lựa chọn giải pháp công nghệ phù hợp cho sự phát triển bền vững của bạn.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Section dịch vụ kết thúc -->
+  
+  <!-- Footer -->
+  <footer class="footer-main">
+    <div class="footer-container">
+      <!-- Cột 1: Mô tả về quán -->
+      <div class="footer-column">
+        <h3 class="footer-title">Quán Cà Phê Po</h3>
+        <p class="footer-description">Không gian ấm cúng, hương vị đậm đà. Chúng tôi tự hào mang đến những tách cà phê thơm ngon nhất, được pha chế từ những hạt cà phê chất lượng cao. Nơi gặp gỡ và chia sẻ những khoảnh khắc đáng nhớ.</p>
+      </div>
+      
+      <!-- Cột 2: Thông tin liên hệ -->
+      <div class="footer-column">
+        <h3 class="footer-title">Liên Hệ</h3>
+        <div class="footer-contact">
+          <p><strong>Địa chỉ:</strong><br>123 Đường ABC, Quận XYZ, TP.HCM</p>
+          <p><strong>Điện thoại:</strong><br><a href="tel:0909123456">0909 123 456</a></p>
+          <p><strong>Email:</strong><br><a href="mailto:info@quancaphepo.vn">info@quancaphepo.vn</a></p>
+          <p><strong>Giờ mở cửa:</strong><br>7:00 - 22:00 (Tất cả các ngày)</p>
+        </div>
+      </div>
+      
+      <!-- Cột 3: Sitemap và Mạng xã hội -->
+      <div class="footer-column">
+        <h3 class="footer-title">Liên Kết</h3>
+        <div class="footer-sitemap">
+          <ul class="footer-links">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4 class="footer-social-title">Theo dõi chúng tôi</h4>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon youtube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Quán Cà Phê Po. Tất cả quyền được bảo lưu.</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+   
+</body>
+</html>
