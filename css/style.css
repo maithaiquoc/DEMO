@@ -1,0 +1,39 @@
+.figure-container{
+    text-align: justify;
+}
+
+.figure{
+    float: right;
+    border: 1px solid grey;
+    text-align: center;
+    width: 150px;
+    padding: 5px 20px;
+    margin: 5px 5px;
+}
+
+.figure > img{
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul > li{
+    float: left;
+    width: 100px;
+    background-color: aqua;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul > li:hover{
+    background-color: blue;
+}
+ul > li:hover > a{
+    color: white;
+}
+ul > li > a{
+    text-decoration: none;
+}
